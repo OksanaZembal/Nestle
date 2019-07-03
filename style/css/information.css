@@ -1,0 +1,54 @@
+.information {
+  margin-top: 20px;
+  padding: 25px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .information {
+    padding: 25px 50px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .information {
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.information .information__wrap {
+  flex-shrink: 1;
+  width: 100%;
+}
+.information .information__wrap .information-img {
+  display: inline-block;
+  width: 100%;
+}
+.information .information__wrap .information__content {
+  font-family: "Yan-Regular";
+  font-size: 1.5em;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .information .information__wrap .information__content {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 568px) {
+  .information .information__wrap .information__content {
+    font-size: 1em;
+  }
+}
+.information .information__backing {
+  margin-left: 20px;
+}
+@media screen and (max-width: 568px) {
+  .information .information__backing {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=information.css.map */

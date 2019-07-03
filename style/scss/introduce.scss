@@ -1,0 +1,117 @@
+        //SCSS
+        $t-color:#0b3f92;
+        $line-color:#03095c;
+        $shadow:(1px 1px 2px black, 0 0 1em $line-color);
+        $font-bold:"Yan-Bold";
+        $font-regular:"Yan-Regular";
+        $font-light:"Yan-Light";
+        $bg-color:#c6e9fd;
+        $border-color: #CCC;
+        $p:100px;
+        //CSS
+        .introduce {
+            margin-top: $p*0.2;
+            padding: $p*0.25 $p;
+            @media screen and (max-width: 768px) {
+                padding: $p*0.25 $p*0.5;
+            }
+            @media screen and (max-width: 568px) {
+                padding: $p*0.1 $p*0.1;
+            }
+            .introduce__title {
+                font-family: $font-regular;
+                font-size: 1.5em;
+                line-height: 1.15;
+                letter-spacing: 1px;
+                text-align: left;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2em;
+                }
+                @media screen and (max-width: 568px) {
+                    font-size: 1em;
+                }
+                .text-link {
+                    text-decoration: none;
+                    font-size: 1.2em;
+                    font-style: italic;
+                    font-weight: bold;
+                    color: $line-color;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1em;
+                    }
+                    @media screen and (max-width: 568px) {
+                        font-size: 0.8em;
+                    }
+                    & :hover {
+                        text-shadow: 1px 1px 2px $t-color;
+                    }
+                }
+            }
+            .introduce__quote {
+                font-family: $font-light;
+                text-align: center;
+                background-image: url("../../img/quotebgraund.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 30px;
+                opacity: 50%;
+                padding: $p*0.2 0;
+                margin: 0 $p*0.5;
+                box-shadow: $shadow;
+                @media screen and (max-width: 568px) {
+                    margin: 0 $p*0.25;
+                }
+                .quote-text {
+                    font-size: 2.5em;
+                    font-style: italic;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.9em;
+                    }
+                    @media screen and (max-width: 568px) {
+                        font-size: 1.2em;
+                    }
+                }
+                .quote-author {
+                    display: block;
+                    font-weight: bolder;
+                    text-align: right;
+                    padding-right: $p;
+                    @media screen and (max-width: 768px) {
+                        padding-right: $p*0.8;
+                    }
+                    @media screen and (max-width: 568px) {
+                        padding-right: $p*0.4;
+                    }
+                }
+            }
+            .introduce__content {
+                font-family: $font-regular;
+                font-size: 1.5em;
+                line-height: 1.15;
+                letter-spacing: 1px;
+                text-align: left;
+                padding-top: $p*0.25;
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2em;
+                }
+                @media screen and (max-width: 568px) {
+                    font-size: 1em;
+                }
+                .introduce__content-img {
+                    float: right;
+                    width: 400px;
+                    height: auto;
+                    margin: 0 0 5px 25px;
+                    border: 1px solid $border-color;
+                    padding: 6px;
+                    @media screen and (max-width: 768px) {
+                        width: 350px;
+                    }
+                    @media screen and (max-width: 568px) {
+                        width: 250px;
+                    }
+                }
+            }
+        }

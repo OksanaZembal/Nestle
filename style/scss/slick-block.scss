@@ -1,0 +1,18 @@
+    //SCSS
+    $m:100px;
+    //CSS
+    .slick {
+        margin: $m*0.4 $m;
+        @media screen and (max-width: 768px) {
+            margin: $m*0.25 $m*0.5;
+        }
+        @media screen and (max-width: 568px) {
+            margin: $m*0.25 $m*0.2;
+        }
+        .slider {
+            width: 100%;
+            .slider__item-img {
+                width: 100%;
+            }
+        }
+    }

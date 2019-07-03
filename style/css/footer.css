@@ -1,0 +1,40 @@
+.description__company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 150px;
+  background-image: url("../../img/shutterstock_351535667777_web_s121_t260_i228 - Copy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  padding: 25px 100px;
+  font-family: "Yan-Regular";
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0b3f92;
+}
+@media screen and (max-width: 768px) {
+  .description__company {
+    padding: 25px 50px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .description__company {
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+  }
+}
+.description__company .author__name .short__info-author {
+  text-align: right;
+  width: 200px;
+}
+@media screen and (max-width: 568px) {
+  .description__company .author__name .short__info-author {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

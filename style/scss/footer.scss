@@ -1,0 +1,43 @@
+ //SCSS
+ $t-color:#0b3f92;
+ $font-regular:"Yan-Regular";
+ $p:100px;
+ @mixin flex {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+ //CSS
+ .description__company {
+     @include flex;
+     height: 150px;
+     background-image: url("../../img/shutterstock_351535667777_web_s121_t260_i228\ -\ Copy.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: $p*0.4;
+     padding: $p*0.25 $p;
+     font-family: $font-regular;
+     font-size: 1.2em;
+     font-weight: bold;
+     color: $t-color;
+     @media screen and (max-width: 768px) {
+         padding: $p*0.25 $p*0.5;
+     }
+     @media screen and (max-width: 568px) {
+         padding: $p*0.1 $p*0.1;
+         flex-direction: column;
+         align-items: center;
+         height: 220px;
+     }
+     .author__name {
+         .short__info-author {
+             text-align: right;
+             width: 200px;
+             @media screen and (max-width: 568px) {
+                 text-align: center;
+             }
+         }
+     }
+ }

@@ -1,0 +1,11 @@
+@import"css/fonts.css";
+@import"css/header.css";
+@import"css/banner.css";
+@import"css/introduce.css";
+@import"css/information.css";
+@import"css/slick-block.css";
+@import"css/footer.css";
+body {
+    padding: 0;
+    margin: 0;
+}

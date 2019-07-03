@@ -1,0 +1,23 @@
+//SCSS
+$t-color:#0b3f92;
+$line-color:#03095c;
+$shadow:(1px 1px 2px black, 0 0 1em $line-color);
+$p:100px;
+//CSS
+.banner {
+    height: 450px;
+    background-image: url("../../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: $p*0.4 $p;
+    box-shadow: $shadow;
+    @media screen and (max-width: 768px) {
+        padding: 0 $p*0.5;
+        margin: 25px $p*0.5;
+    }
+    @media screen and (max-width: 568px) {
+        padding: 0;
+        margin: 25px 0;
+    }
+}

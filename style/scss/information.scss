@@ -1,0 +1,57 @@
+//SCSS
+$t-color:#0b3f92;
+$line-color:#03095c;
+$shadow:(1px 1px 2px black, 0 0 1em $line-color);
+$font-bold:"Yan-Bold";
+$font-regular:"Yan-Regular";
+$font-light:"Yan-Light";
+$bg-color:#c6e9fd;
+$border-color: #CCC;
+$p:100px;
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+//CSS
+.information {
+    margin-top: $p*0.2;
+    padding: $p*0.25 $p;
+    @include flex;
+    @media screen and (max-width: 768px) {
+        padding: $p*0.25 $p*0.5;
+    }
+    @media screen and (max-width: 568px) {
+        padding: $p*0.1 $p*0.1;
+        flex-direction: column;
+        align-items: center;
+    }
+    .information__wrap {
+        flex-shrink: 1;
+        width: 100%;
+        .information-img {
+            display: inline-block;
+            width: 100%;
+        }
+        .information__content {
+            font-family: $font-regular;
+            font-size: 1.5em;
+            line-height: 1.15;
+            letter-spacing: 1px;
+            text-align: left;
+            @media screen and (max-width: 768px) {
+                font-size: 1.2em;
+            }
+            @media screen and (max-width: 568px) {
+                font-size: 1em;
+            }
+        }
+    }
+    .information__backing {
+        margin-left: 20px;
+        @media screen and (max-width: 568px) {
+            margin-left: 0;
+        }
+    }
+}

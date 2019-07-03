@@ -1,0 +1,21 @@
+.slick {
+  margin: 40px 100px;
+}
+@media screen and (max-width: 768px) {
+  .slick {
+    margin: 25px 50px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .slick {
+    margin: 25px 20px;
+  }
+}
+.slick .slider {
+  width: 100%;
+}
+.slick .slider .slider__item-img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=slick-block.css.map */
