@@ -17,30 +17,67 @@
     align-items: center;
   }
 }
-.information .information__wrap {
+.information .information__item {
   flex-shrink: 1;
   width: 100%;
 }
-.information .information__wrap .information-img {
+.information .information__item .information-img {
   display: inline-block;
   width: 100%;
 }
-.information .information__wrap .information__content {
+.information .information__item .information__item-title {
+  font-family: "Yan-Bold";
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .information .information__item .information__item-title {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 568px) {
+  .information .information__item .information__item-title {
+    font-size: 0.8em;
+  }
+}
+.information .information__item .information__content {
   font-family: "Yan-Regular";
   font-size: 1.5em;
   line-height: 1.15;
   letter-spacing: 1px;
   text-align: left;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
-  .information .information__wrap .information__content {
+  .information .information__item .information__content {
     font-size: 1.2em;
   }
 }
 @media screen and (max-width: 568px) {
-  .information .information__wrap .information__content {
+  .information .information__item .information__content {
     font-size: 1em;
   }
+}
+.information .information__item .information__content .text-link {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+  color: #03095c;
+}
+@media screen and (max-width: 768px) {
+  .information .information__item .information__content .text-link {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 568px) {
+  .information .information__item .information__content .text-link {
+    font-size: 0.8em;
+  }
+}
+.information .information__item .information__content .text-link :hover {
+  text-shadow: 1px 1px 2px #0b3f92;
 }
 .information .information__backing {
   margin-left: 20px;

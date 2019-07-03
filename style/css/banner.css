@@ -1,10 +1,10 @@
 .banner {
-  height: 450px;
+  height: 500px;
   background-image: url("../../img/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 40px 100px;
+  margin: 50px 100px;
   box-shadow: 1px 1px 2px black, 0 0 1em #03095c;
 }
 @media screen and (max-width: 768px) {
